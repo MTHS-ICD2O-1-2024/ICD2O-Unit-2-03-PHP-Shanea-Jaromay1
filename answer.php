@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
   <link rel="manifest" href="./images/site.webmanifest" />
-  <title>The Hello World program,in PHP</title>
+  <title>Address,in PHP</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">The Hello World program, in PHP</span>
+        <span class="mdl-layout-title">Address, in PHP</span>
       </div>
     </header>
     <main class="mdl-layout__content">
@@ -32,10 +32,10 @@
       <div class="page-content-php">
         <div id="address">
           <?php
-          $numebr = $_GET["street-number"];
+          $number = $_GET["street-number"];
           $name = $_GET["street-name"];
 
-          echo "<p>Your address is: " . $number . ", number " . $name . ".</p>";
+          echo "<p>Your address is: " . $number . ", name " . $name . ".</p>";
           ?>
         </div>
       </div>
