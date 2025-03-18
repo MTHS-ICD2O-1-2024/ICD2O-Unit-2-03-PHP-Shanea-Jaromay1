@@ -6,11 +6,11 @@
   <meta name="description" content="The Hello World program, in PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Shanea Jaromay" />
-  <meta name=" viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-indigo.min.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+  <link rel=" apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
   <link rel="manifest" href="./images/site.webmanifest" />
@@ -30,26 +30,14 @@
         <img src="./images/street.jpg" alt="street image" width="250" />
       </div>
       <div class="page-content-php">
-        <form action="answer.php" method="GET">
-          <p>Street number</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" name="street-number">
-            <label class="mdl-textfield__label" for="street-number">Street Number here ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          <br />
-          <p>Street name</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="street-name">
-            <label class="mdl-textfield__label" for="street-name">Street Name here ...</label>
-          </div>
-          <br />
-          <!-- Accent-colored raised button with ripple -->
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            type="submit">
-            Enter
-          </button>
-        </form>
+        <div id="address">
+          <?php
+          $numebr = $_GET["street-number"];
+          $name = $_GET["street-name"];
+
+          echo "<p>Your address is: " . $number . ", number " . $name . ".</p>";
+          ?>
+        </div>
       </div>
     </main>
   </div>
